@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/dimen_8dp"
+        android:layout_marginVertical="@dimen/dimen_5dp"
+        app:cardCornerRadius="@dimen/dimen_8dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_5dp">
+
+            <TextView
+                android:id="@+id/txtNameMovies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_16sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Ant-Man" />
+
+            <ImageView
+                android:id="@+id/imgMovies"
+                android:layout_width="@dimen/dimen_120dp"
+                android:layout_height="@dimen/dimen_120dp"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtNameMovies" />
+
+            <TextView
+                android:id="@+id/txtReleaseDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:text="@string/release_date"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintStart_toEndOf="@id/imgMovies"
+                app:layout_constraintTop_toTopOf="@id/imgMovies" />
+
+            <TextView
+                android:id="@+id/txtReleaseDateDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:textColor="@color/color_radio_button"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintStart_toEndOf="@id/txtReleaseDate"
+                app:layout_constraintTop_toTopOf="@id/txtReleaseDate"
+                tools:text="2015-08-14" />
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:text="@string/rating"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintStart_toEndOf="@id/imgMovies"
+                app:layout_constraintTop_toBottomOf="@id/txtReleaseDateDetail" />
+
+            <TextView
+                android:id="@+id/txtRatingDetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:textColor="@color/color_radio_button"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintStart_toEndOf="@id/txtRating"
+                app:layout_constraintTop_toTopOf="@id/txtRating"
+                tools:text="7.0/10.0" />
+
+            <ImageView
+                android:id="@+id/imgStar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_star_border_black"
+                app:layout_constraintBottom_toBottomOf="@id/txtRatingDetail"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/txtRatingDetail" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_adult"
+                android:visibility="invisible"
+                app:layout_constraintBottom_toBottomOf="@id/txtRatingDetail"
+                app:layout_constraintEnd_toStartOf="@id/imgStar"
+                app:layout_constraintTop_toTopOf="@id/txtRatingDetail" />
+
+            <TextView
+                android:id="@+id/txtOverview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:text="@string/overview"
+                android:textColor="@color/color_radio_button"
+                android:textSize="@dimen/dimen_12sp"
+                app:layout_constraintStart_toEndOf="@id/imgMovies"
+                app:layout_constraintTop_toBottomOf="@id/txtRatingDetail" />
+
+            <TextView
+                android:id="@+id/txtOverviewDetail"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/dimen_5dp"
+                android:layout_marginTop="2dp"
+                android:maxLines="4"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imgMovies"
+                app:layout_constraintTop_toBottomOf="@id/txtOverview" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

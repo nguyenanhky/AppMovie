@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </androidx.viewpager2.widget.ViewPager2>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        app:tabIconTint="@color/white"
+        app:tabTextColor="@color/white"
+        app:tabIndicatorColor="@color/tabIndicatorColor"
+        android:background="@color/blue_tab_layout"
+        app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/layoutArrow"
+        android:orientation="vertical"
+        android:background="@color/blue_tab_layout"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btnPoplarMovies"
+            android:paddingVertical="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/white"
+            android:text="@string/popular_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/btnTopRate"
+            android:paddingVertical="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/white"
+            android:text="@string/top_rated_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/btnUpComing"
+            android:paddingVertical="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/white"
+            android:text="@string/upcoming_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/btnNowPlay"
+            android:paddingVertical="@dimen/dimen_10dp"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_18sp"
+            android:textColor="@color/white"
+            android:text="@string/now_playing_movies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

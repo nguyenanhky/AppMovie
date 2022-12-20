@@ -1,0 +1,63 @@
+<resources>
+    <string name="app_name">VietTQMovies</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="edit">Edit</string>
+    <string name="reminder">Reminder</string>
+    <string name="show_all">Show All</string>
+    <string name="ava">ava</string>
+    <string name="movies">Movies</string>
+    <string name="favourite">Favourite</string>
+    <string name="about">About</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="cancel">Cancel</string>
+    <string name="done">Done</string>
+    <string name="name">Name</string>
+    <string name="sample_example_com">sample@example.com</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="email_blank">Email cannot be blank</string>
+    <string name="email_wrong_format">Email is wrong format</string>
+    <string name="name_blank">Name cannot be blank</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="icon">icon</string>
+    <string name="release_date">Release date:</string>
+    <string name="rating">Rating:</string>
+    <string name="overview">Overview:</string>
+    <string name="isgrid">isGrid</string>
+    <string name="cast_amp_crew"><![CDATA[Cast & Crew]]></string>
+    <string name="delete_favourite">Delete Favourite</string>
+    <string name="are_you">Are you sure you want to remove this item from favourite ?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="filter">FILTER</string>
+    <string name="category">Category</string>
+    <string name="rate_from">Movies with rate from</string>
+    <string name="from_release_year">From Release year</string>
+    <string name="sort">SORT</string>
+    <string name="sort_by">Sort By</string>
+    <string name="popular_movies">Popular Movies</string>
+    <string name="top_rated_movies">Top Rated Movies</string>
+    <string name="upcoming_movies">Upcoming Movies</string>
+    <string name="now_playing_movies">Now Playing Movies</string>
+    <string name="ok">Ok</string>
+    <string name="release_date_2">Release Date</string>
+    <string name="rating_2">Rating</string>
+    <string name="year">Year</string>
+    <string name="year_blank">Year cannot be blank</string>
+    <string name="year_1000">Year must be greater than 1000</string>
+    <string name="search">Search</string>
+    <string name="delete">Delete</string>
+    <string name="are_you_sure_to_delete">Are you sure to delete</string>
+</resources>
